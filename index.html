@@ -11,201 +11,339 @@
   <div class="sidenav">
     <a href="#main-section">Itroduction</a>
     <a href="#main-info">What you should already know?</a>
-    <a href="#">Java an Javascript</a>
-    <a href="#">Hello World</a>
-    <a href="#">Variables</a>
-    <a href="#">Declaring variables</a>
-    <a href="#">Variables scope</a>
-    <a href="#">Global variables</a>
-    <a href="#">Constans</a>
-    <a href="#">Data types</a>
-    <a href="#">if..else statment</a>
-    <a href="#">While statment</a>
-    <a href="#">Function declarations</a>
-    <a href="#">Reference</a>
+    <a href="#java_&javascript">Java And Javascript</a>
+    <a href="#hello">Hello World</a>
+    <a href="#vars">Variables</a>
+    <a href="#declaring-vars">Declaring variables</a>
+    <a href="#var-scope">Variables scope</a>
+    <a href="#global-var">Global variables</a>
+    <a href="#static">Static</a>
+    <a href="#data-types">Data types</a>
+    <a href="#if_else">if..else statment</a>
+    <a href="#While">While statment</a>
+    <a href="#function_declaration">Function declarations</a>
+    <a href="#reference">Reference</a>
   </div>
 
   <main id="main-doc" class="main">
     <!-- Main section -->
     <section id="main-section" class="main-section">
       <h2>Introduction</h2>
-      <p></p>
-      <p></p>
+      <p>JAVA was developed by James Gosling at Sun Microsystems Inc in the year 1991, later acquired by Oracle Corporation. It is a simple programming language. Java makes writing, compiling, and debugging programming easy. It helps to create reusable code and modular programs.</p>
+      <p>Java is a class-based, object-oriented programming language and is designed to have as few implementation dependencies as possible. A general-purpose programming language made for developers to write once run anywhere that is compiled Java code can run on all platforms that support Java.</p>
       <ul>
-        <li></li>
-        <li></li>
+        <li>In 1997, Sun Microsystems approached the ISO standards body and later formalized Java, but it soon withdrew from the process. At one time, Sun made most of its Java implementations available without charge, despite their proprietary software status. Sun generated revenue from Java through the selling of licenses for specialized products such as the Java Enterprise System.</li>
+        <li>On November 13, 2006, Sun released much of its Java virtual machine as free, open-source software. On May 8, 2007, Sun finished the process, making all of its JVM’s core code available under open-source distribution terms.</li>
       </ul>
     </section>
 
     <!-- Info Section -->
     <section id="main-info" class="main-section">
       <h2>What you should already know?</h2>
-      <p></p>
+      <p>People often describe Java by comparing it to C++. In many ways, one could say it is a successor to the older programming languages. Java automatically handles the reclamation of memory (garbage collection) and has various other features that eliminate all classes of bugs. While C++ maintained compatibility with the older C language, Java can be seen as abandoning the C legacy, fully embracing the principles of object-oriented programming.</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>You must know at least the basics of how to use a computer, and should be able to start a command line shell.</li>
+        <li>If you are new to programming then Introduction to Programming is strongly recommended.</li>
+        <li>If you already know C++ or any other Object-Oriented language, Java should be easy to pick up.</li>
       </ul>
     </section>
 
     <!-- Java && JavaScript -->
     <section id="java_&javascript" class="main-section">
       <h2>Java And JavaScript</h2>
-      <p></p>
-      <p></p>
-      <p></p>
+      <p>The JavaScript programming language, developed by Netscape, Inc., is not part of the Java platform.</p>
+      <p>JavaScript does not create applets or stand-alone applications. In its most common form, JavaScript resides inside HTML documents, and can provide levels of interactivity to web pages that are not achievable with simple HTML.</p>
+      <p>Key differences between Java and JavaScript:</p>
+      <ul>
+        <li>Java is an OOP programming language while Java Script is an OOP scripting language.</li>
+        <li>Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only.</li>
+        <li>Java code needs to be compiled while JavaScript code are all in text.</li>
+      </ul>
     </section>
 
     <!-- Hello World -->
     <section id="hello" class="main-section">
       <h2>Hello World</h2>
-      <p></p>
+      <p>Let's create the hello java program:</p>
       <code>
-
+        class Simple{  
+          public static void main(String args[]){  
+           System.out.println("Hello Java");  
+          }  
+      }  
       </code>
-      <p></p>
+      <p>Save the above file as Simple.java.<br>
+        To compile:<br>
+        javac Simple.java<br>
+        To execute:<br>
+        java Simple</p>
     </section>
 
     <!-- Variables -->
     <section id="vars" class="main-section">
       <h2>Varibles</h2>
-      <p></p>
-      <p></p>
-      <p></p>
+      <p>1) Local Variable:
+        A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+        
+        A local variable cannot be defined with "static" keyword.</p>
+      <p>2) Instance Variable:
+        A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+        
+        It is called an instance variable because its value is instance-specific and is not shared among instances.</p>
+      <p>3) Static variable:
+        A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.</p>
     </section>
 
     <!-- Declaring Variables -->
     <section id="declaring-vars" class="main-section">
       <h2>Declaring Variables</h2>
-      <p></p>
-      <p></p>
+      <p>Variables are containers for storing data values</p>
+      <p>To create a variable, you must specify the type and assign it a value:</p>
       <code>
-
+        type variableName = value;
       </code>
-      <p></p>
-      <p></p>
+      <p>Where type is one of Java's types (such as int or String), and variableName is the name of the variable (such as x or name). The equal sign is used to assign values to the variable.</p>
+      <p>To create a variable that should store text, look at the following example:</p>
       <code>
-
+        String name = "John";
+System.out.println(name);
       </code>
-      <p></p>
-      <p></p>
+      <p>To create a variable that should store a number, look at the following example:</p>
+      <p>Create a variable called myNum of type int and assign it the value 15:</p>
       <code>
-
+        int myNum = 15;
+System.out.println(myNum
       </code>
-      <p></p>
+      <p>All Java variables must be identified with unique names.
+
+        These unique names are called identifiers.
+        
+        Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
     </section>
 
     <!-- Varibles Scope -->
     <section id="var-scope" class="main-section">
-      <h2>Declaring Variables</h2>
-      <p></p>
-      <p></p>
-      <code>
+      <h2>Variables Scope</h2>
+      <p>Scope of a variable is the part of the program where the variable is accessible. Like C/C++, in Java, all identifiers are lexically (or statically) scoped, i.e.scope of a variable can determined at compile time and independent of function call stack. 
+        Java programs are organized in the form of classes. Every class is part of some package. Java scope rules can be covered under following categories.</p>
+      <p>Member Variables (Class Level Scope)
 
+        These variables must be declared inside class (outside any function). They can be directly accessed anywhere in class. Let’s take a look at an exampl</p>
+      <code>
+        public class Test
+{
+    // All variables defined directly inside a class 
+    // are member variables
+    int a;
+    private String b;
+    void method1() {....}
+    int method2() {....}
+    char c;
+}
       </code>
-      <p></p>
-      <code>
+      <p>Local Variables (Method Level Scope)
 
+        Variables declared inside a method have method level scope and can’t be accessed outside the method.</p>
+      <code>
+        public class Test
+{
+    void method1() 
+    {
+       // Local variable (Method level scope)
+       int x;
+    }
+}
       </code>
     </section>
 
     <!-- Global Variables -->
     <section id="global-var" class="main-section">
       <h2>Global Variables</h2>
-      <p></p>
-      <p></p>
+      <p>If you have experience with other programming languages, such as C and C++, you have probably used global variables. A global variable is one that is accessible to all parts of a program and is usually declared as part of the first lines of code.</p>
+      <p>Java doesn't technically support global variables. As a pure object-oriented language, everything needs to be part of a class. The reason is to protect data and members of classes from being changed, inadvertently or on purpose, by other parts of the program. However, you still may need to have variables that can be accessed across your program, and not confined to specific classes.</p>
     </section>
 
-    <!-- Constants -->
-    <section id="constants" class="main-section">
-      <h2>Constants</h2>
-      <p></p>
-      <code>
+    <!-- static -->
+    <section id="static" class="main-section">
+      <h2>Static</h2>
+      <p>Because Java is object-oriented, all variables are members of classes. However, we can create static variables that are more accessible. The static modifier tells Java that the variable can be used across all instances of the class. Therefore, if you create a variable for pay rate and make it static, any instance of the parent class can access pay rate.
 
-      </code>
-      <p></p>
-      <p></p>
-      <p></p>
+        This code shows how we declare two variables within a class. Although we're declaring price and pages in the Openclass class, they are static variables and can now be used by instances of Openclass.</p>
       <code>
+        public class Openclass {
+          public static double price = 15.24;
+          public static long pages = 1053;
+        }
       </code>
-      <p></p>
+      <p>In another class, we can get to those variables by simply denoting the class, putting in a period, and finally the field name.</p>
+      <p>The following code creates new variables but assigns the value of the global variables to these new variables:</p>
       <code>
+        public static void main(String[] args) {
+          double newPrice = Openclass.price;
+          long newPages = Openclass.pages;
+          System.out.println(newPrice);
+          System.out.println(newPages);
+        }
       </code>
     </section>
 
     <!-- Data types -->
     <section id="data-types" class="main-section">
       <h2>Data types</h2>
-      <p></p>
+      <p>Data types are divided into two groups:
+
+        Primitive data types - includes byte, short, int, long, float, double, boolean and char
+        Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)<br>
+        Primitive Data Types
+        A primitive data type specifies the size and type of variable values, and it has no additional methods.
+        
+        There are eight primitive data types in Java:</p>
       <ul>
-        <li></li>
-        <li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        </li>
-        <li></li>
+        <li>byte</li>
+        <li>short</li>
+        <li>int</li>
+        <li>long</li>
+        <li>float</li>
+        <li>double</li>
+        <li>boolean</li>
+        <li>char</li>
       </ul>
-      <p></p>
+      <p>Non-primitive data types are called reference types because they refer to objects.
+
+        The main difference between primitive and non-primitive data types are:
+        
+        Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+        Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+        A primitive type has always a value, while non-primitive types can be null.
+        A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+        The size of a primitive type depends on the data type, while non-primitive types have all the same size.
+        </p>
     </section>
     <!-- ife else -->
     <section id="if_else" class="main-section">
       <h2>if...else statement</h2>
-      <p></p>
-      <code></code>
-      <p></p>
-      <p></p>
-      <code></code>
-      <p></p>
-      <code></code>
-      <p></p>
-      <code></code>
-      <p></p>
-      <code></code>
+      <p>Use the if statement to specify a block of Java code to be executed if a condition is true.</p>
+      <code>
+        if (condition) {
+          // block of code to be executed if the condition is true
+        }
+      </code>
+      <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:</p>
+      
+      <code>
+        if (20 > 18) {
+          System.out.println("20 is greater than 18");
+        }
+      </code>
+      <p>We can also test variables:</p>
+      <code>
+        int x = 20;
+int y = 18;
+if (x > y) {
+  System.out.println("x is greater than y");
+}
+      </code>
+      <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+      <code>
+        if (condition) {
+          // block of code to be executed if the condition is true
+        } else {
+          // block of code to be executed if the condition is false
+        }
+      </code>
+      <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+      <code>
+        if (condition1) {
+          // block of code to be executed if condition1 is true
+        } else if (condition2) {
+          // block of code to be executed if the condition1 is false and condition2 is true
+        } else {
+          // block of code to be executed if the condition1 is false and condition2 is false
+        }
+      </code>
     </section>
 
     <!-- while stament -->
     <section id="While" class="main-section">
       <h2>while statement</h2>
-      <p></p>
-      <code></code>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
-      <code></code>
-      <p></p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <p></p>
+      <p>
+        Loops can execute a block of code as long as a specified condition is reached.
+
+        Loops are handy because they save time, reduce errors, and they make code more readable.<br>
+        The while loop loops through a block of code as long as a specified condition is true:
+      </p>
+      <code>
+        while (condition) {
+          // code block to be executed
+        }
+      </code>
+
+      <p>In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:</p>
+      <code>
+        int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+      </code>
+      
     </section>
 
     <!-- Function Decalration -->
     <section id="function_declaration" class="main-section">
       <h2>Function Decalration</h2>
-      <p></p>
+      <p>A method must be declared within a class. It is defined with the name of the method, followed by parentheses (). Java provides some pre-defined methods, such as System.out.println(), but you can also create your own methods to perform certain actions:
+
+      </p>
+      <code>
+        public class Main {
+          static void myMethod() {
+            // code to be executed
+          }
+        }
+      </code>
+      <p>Example Explained</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>myMethod() is the name of the method</li>
+        <li>static means that the method belongs to the Main class and not an object of the Main class. You will learn more about objects and how to access methods through objects later in this tutorial.</li>
+        <li>void means that this method does not have a return value. </li>
       </ul>
-      <p></p>
-      <code></code>
-      <p></p>
-      <code></code>
-      <p></p>
+      <p>To call a method in Java, write the method's name followed by two parentheses () and a semicolon;
+
+        In the following example, myMethod() is used to print a text (the action), when it is called:</p>
+      <code>
+        public class Main {
+          static void myMethod() {
+            System.out.println("I just got executed!");
+          }
+        
+          public static void main(String[] args) {
+            myMethod();
+          }
+        }
+        
+        // Outputs "I just got executed!"
+      </code>
+      <p>A method can also be called multiple times</p>
+      <code>
+        public class Main {
+          static void myMethod() {
+            System.out.println("I just got executed!");
+          }
+        
+          public static void main(String[] args) {
+            myMethod();
+            myMethod();
+            myMethod();
+          }
+        }
+      </code>
+     
     </section>
     <section id="reference" class="main-section">
       <ul>
         <li>
-          Ald Documentation in this page is taken from <a href="http://"></a>
+          Ald Documentation in this page is taken from <a href="http://www.w3schools.com/">w3schools</a>
         </li>
       </ul>
     </section>
